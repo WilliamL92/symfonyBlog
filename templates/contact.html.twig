@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+
+{# header #}
+{% block stylesheets %}
+{{ parent() }}
+{% endblock %}
+
+{# body #}
+{% block body %}
+{{ parent() }}
+
+{# corps #}
+<br><br><br>
+<div class="text-center">
+<h2 id="titre">Me contacter</h2>
+<br>
+<h4>Email: lavit.william@gmail.com</h4>
+<h4>Tel: 06 87 11 61 00</h4>
+<br>
+
+<h2 id="titre">Mes réseaux sociaux</h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/william-lavit-376076159/">Linkedin</a></li>
+
+<li><a href="https://github.com/WilliamL92">GitHub</a></li>
+</ul>
+<br>
+
+<h3>Merci d'avoir visiter mon site</h3>
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{# header #}
+{% block stylesheets %}
+{{ parent () }}
+{% endblock %}
+
+{# body #}
+{% block body %}
+
+{{ parent() }}
+<br><br><br>
+
+<div class="text-center">
+<h1>Mes articles</h1>
+<hr>
+
+{% for i in 1..10 %}
+<div id="articleAffiche" class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/150/100" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Article n°{{ i }}</h5>
+    <p class="card-text">Cliquez sur le bouton juste en-dessous.</p>
+    <a href="{{ path("pageArticle") }}" class="btn btn-primary">cliquez-moi</a>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}

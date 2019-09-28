@@ -1,0 +1,8 @@
+#articleAffiche{
+    display:inline-block;
+    margin:20px;
+}
+
+#titre{
+    color:rgb(85, 134, 66);
+}

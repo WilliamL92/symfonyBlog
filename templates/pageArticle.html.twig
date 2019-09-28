@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{# header #}
+{% block stylesheets %}
+{{ parent () }}
+{% endblock %}
+
+{# body #}
+{% block body %}
+{{ parent() }}
+
+<br>
+<div class="jumbotron text-center">
+        <h4 class="display-4">Mon article</h3>
+        <hr>
+        <p class="lead">Un paragraphe d'article bien écrit.</p>
+        <p><a class="btn btn-lg btn-primary" href="#" role="button">Revenir à l'accueil</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-4">
+        {% for i in 1..3 %}
+          <h4>Liste de gauche n°{{ i }}</h4>
+          <p>Le paragraphe {{ i }} de la première liste.</p>
+          {% endfor %}
+        </div>
+
+        <div class="col-lg-4">
+        {% for i in 1..3 %}
+          <h4>Liste du milieu n°{{ i }}</h4>
+          <p>Le paragraphe {{ i }} de la deuxième liste.</p>
+          {% endfor %}
+        </div>
+
+        <div class="col-lg-4">
+        {% for i in 1..3 %}
+          <h4>Liste de droite n°{{ i }}</h4>
+          <p>Le paragraphe {{ i }} de la troisième liste.</p>
+          {% endfor %}
+        </div>
+      </div>
+
+{% endblock %}

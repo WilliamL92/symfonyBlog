@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{# header #}
+{% block stylesheets %}
+{{ parent () }}
+{% endblock %}
+
+{# body #}
+{% block body %}
+
+{{ parent() }}
+<br><br><br>
+
+<div class="text-center">
+<h1>Bienvenue sur mon blog!</h1>
+<hr>
+<br>
+
+<h4>Je suis étudiant à l'Afpa de Créteil et je travail actuellement sur le framework Symfony.</h4>
+<br>
+
+<h3>vous pouvez voir mes <a href="{{ path("articles") }}">articles</a> ou aller directemment sur ma page <a href="{{ path("contact") }}">contact.</a></h3>
+<br>
+
+<h4>N'hésitez pas à repasser ultérieurement.</h4>
+
+</div>
+
+{% endblock %}
